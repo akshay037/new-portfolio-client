@@ -185,7 +185,7 @@ const Projects = () => {
 
               <div className="mt-auto flex gap-2">
                 <a
-                  href={item.hostLink}
+                  href={item.gitlink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 px-3 py-2 rounded-md text-sm text-center border"
@@ -198,7 +198,7 @@ const Projects = () => {
                 </a>
 
                 <a
-                  href={item.hostLink}
+                  href={item.hostlink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 px-3 py-2 rounded-md text-sm text-center"
