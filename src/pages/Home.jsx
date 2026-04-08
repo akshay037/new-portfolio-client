@@ -16,11 +16,45 @@ const Home = () => {
   const TITLE = "Hi, I'm Akshay Teltumbade";
 
   const icons = [
-    <GithubOutlined key="github" style={{ fontSize: "20px" }} />,
-    <LinkedinOutlined key="linkedin" style={{ fontSize: "20px" }} />,
-    <XOutlined key="x" style={{ fontSize: "20px" }} />,
-    <InstagramOutlined key="instagram" style={{ fontSize: "20px" }} />,
-    <RedditOutlined key="reddit" style={{ fontSize: "20px" }} />,
+    <a
+      key="github"
+      href="https://github.com/akshay037"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <GithubOutlined style={{ fontSize: "20px" }} />
+    </a>,
+    <a
+      key="linkedin"
+      href="https://www.linkedin.com/in/akshay037"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <LinkedinOutlined style={{ fontSize: "20px" }} />
+    </a>,
+    <a
+      href="https://x.com/akshay__037"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <XOutlined style={{ fontSize: "20px" }} />
+    </a>,
+    <a
+      key="instagram"
+      href="https://www.instagram.com/akshay__037/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <InstagramOutlined style={{ fontSize: "20px" }} />
+    </a>,
+    <a
+      key="reddit"
+      href="https://www.reddit.com/user/akshay037"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <RedditOutlined style={{ fontSize: "20px" }} />
+    </a>,
   ];
 
   useEffect(() => {
