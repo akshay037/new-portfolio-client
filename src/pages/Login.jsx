@@ -7,6 +7,7 @@ import { setAdmin } from "../redux/adminSlice";
 const Login = () => {
   const [adminData, setAdminData] = useState({
     email: "admin@gmail.com",
+    email: "",
     password: "",
   });
   const dispatch = useDispatch();
