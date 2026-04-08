@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import Type from "../components/Type";
 import SpaceBackground from "../components/SpaceBackground";
-import akshay_resume from "../assets/Akshay_Teltumbade.pdf";
+import akshay_resume from "../assets/Akshay_Teltumbade_Fullstack.pdf";
+
 import {
   GithubOutlined,
   LinkedinOutlined,
