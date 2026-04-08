@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import "antd/dist/reset.css";
+
+/* Defaults until JS runs (hacker / neon) */
+:root {
+  --color-bg: #0d0d0d;
+  --color-surface: #141414;
+  --color-accent: #39ff14;
+  --color-text: #e8e8e8;
+  --color-text-muted: #a3a3a3;
+  --color-nav-bg: #080808;
+  --color-on-accent: #0d0d0d;
+  /* Single source of truth: content sits between navbar and footer */
+  --navbar-height: 64px;
+  --footer-height: 56px;
+}
+
+html,
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-surface {
+  background-color: var(--color-surface);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 28%, transparent);
+  box-shadow: 0 0 24px color-mix(in srgb, var(--color-accent) 12%, transparent);
+}
+
+.theme-text-muted {
+  color: var(--color-text-muted);
+}
+
+/* Content band between navbar and footer — single source of truth; pages don't set nav/footer padding */
+.content-between-nav-footer {
+  min-height: calc(100vh - var(--navbar-height) - var(--footer-height));
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
